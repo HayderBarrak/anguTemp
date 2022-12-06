@@ -6,6 +6,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 /* Modules */
 import { AppCommonModule } from '@common/app-common.module';
+import {authInterceptorProviders} from '@modules/auth/helpers/auth.interceptor';
 import { NavigationModule } from '@modules/navigation/navigation.module';
 
 /* Components */
@@ -29,7 +30,7 @@ import * as authServices from './services';
         AppCommonModule,
         NavigationModule,
     ],
-    providers: [...authServices.services, ...authGuards.guards],
+    providers: [...authServices.services, ...authGuards.guards,authInterceptorProviders],
     declarations: [...authContainers.containers, ...authComponents.components],
     exports: [...authContainers.containers, ...authComponents.components],
 })
