@@ -5,12 +5,7 @@ const routes: Routes = [
     {
         path: '',
         pathMatch: 'full',
-        redirectTo: '/dashboard',
-    },
-    {
-        path: 'charts',
-        loadChildren: () =>
-            import('modules/charts/charts-routing.module').then(m => m.ChartsRoutingModule),
+        redirectTo: '/auth/login',
     },
     {
         path: 'dashboard',

@@ -7,11 +7,11 @@ export const sideNavSections: SideNavSection[] = [
     },
     {
         text: 'INTERFACE',
-        items: ['layouts', 'pages'],
+        items: ['pages'],
     },
     {
         text: 'ADDONS',
-        items: ['charts', 'tables'],
+        items: ['tables'],
     },
 ];
 
@@ -20,20 +20,6 @@ export const sideNavItems: SideNavItems = {
         icon: 'tachometer-alt',
         text: 'Dashboard',
         link: '/dashboard',
-    },
-    layouts: {
-        icon: 'columns',
-        text: 'Layouts',
-        submenu: [
-            {
-                text: 'Static Navigation',
-                link: '/dashboard/static',
-            },
-            {
-                text: 'Light Sidenav',
-                link: '/dashboard/light',
-            },
-        ],
     },
     pages: {
         icon: 'book-open',
@@ -74,11 +60,6 @@ export const sideNavItems: SideNavItems = {
                 ],
             },
         ],
-    },
-    charts: {
-        icon: 'chart-area',
-        text: 'Charts',
-        link: '/charts',
     },
     tables: {
         icon: 'table',
